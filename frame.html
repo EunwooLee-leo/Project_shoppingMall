@@ -1,185 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1>Leo</h1>
-    <!-- 홈 아이콘 버튼 추가 -->
-    <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
-    <!-- 장바구니 아이콘 버튼 추가 -->
-    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Cart </a>
-    <!-- 로그인 아이콘 버튼 추가 -->
-    <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i>Log In</a>
-
-
+    <title> Leo </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <style>
-
-        body {
-            background-color: #ffffff; /* 원하는 배경색으로 설정 */
-            color: #333; /* 원하는 글꼴 색상으로 설정 */
-            font-family: "Times New Roman";
-        }
-
-        h1, h2 {
-            text-align: center; /* 가운데 정렬 */
-            margin-top: 20px; /* 위쪽 여백 추가 (원하는 값으로 조절) */
-        }
-
-        html, body {
-            width: 100%; /* 페이지의 너비를 100%로 설정 */
-            height: 100%; /* 페이지의 높이를 100%로 설정 */
-            margin: 0; /* 바깥 여백 제거 */
-            padding: 0; /* 안쪽 여백 제거 */
-        }
-
-        .scroll-container {
-            width: 100%;
-            height: 1000px; /* 고정값으로 설정 */
-            overflow: auto; /* 스크롤을 허용하는 스타일 */
-        }
-
-        img {
-            height: 400px;
-        }
-
-        /* 아이콘과 텍스트의 간격 조정 및 아이콘 색상 변경 */
-        .nav-link {
-            color: black;
-            position: relative;
-            left: 80%;
-        }
-
-        /* 추가 스타일링이 필요한 경우 styles.css에 추가 */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4개의 열을 생성 */
-            gap: 20px; /* 열과 행 사이의 간격 설정 (선택적) */
-        }
-
-        .product {
-            text-align: center; /* 요소 내부 내용을 중앙 정렬 */
-            padding: 10px; /* 내부 여백 설정 */
-        }
-
-        /* 다른 스타일링을 원하는 경우 필요한 스타일 추가 */
-        .price {
-            font-weight: bold;
-        }
-
-        .add-to-cart {
-            padding: 5px 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .fa-cart-plus {
-            margin-right: 5px; /* 아이콘과 텍스트 사이의 간격 조정 (선택적) */
-        }
-
-    </style>
-    <script>
-        // JavaScript 코드를 직접 포함할 수도 있습니다.
-        // 이 부분에 JavaScript 코드 추가
-    </script>
 </head>
+
 <body>
-<div class="scroll-container">
+<style>
+    body {
+        background-color: #ffffff; /* 원하는 배경색으로 설정 */
+        color: #333; /* 원하는 글꼴 색상으로 설정 */
+        font-family: "Times New Roman";
+    }
 
-    <h2> Men's clothes</h2>
+    h1, h2 {
+        text-align: center; /* 가운데 정렬 */
+        margin-top: 20px; /* 위쪽 여백 추가 (원하는 값으로 조절) */
+    }
 
-    <main class="product-grid">
-        <section class="product">
-            <img src="./image/p1.jpg" alt="상품1">
-            <p>프리미엄 스탠다드 반팔 니트 (17Color)</p>
-            <p class="price">29000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-        </section>
+    html, body {
+        width: 100%; /* 페이지의 너비를 100%로 설정 */
+        height: 100%; /* 페이지의 높이를 100%로 설정 */
+        margin: 0; /* 바깥 여백 제거 */
+        padding: 0; /* 안쪽 여백 제거 */
+    }
 
-        <section class="product">
-            <img src="./image/p2.jpg" alt="상품2">
-            <p>루즈핏 라운드 니트 조끼 (5Color)</p>
-            <p class="price">52000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
+    img {
+        height: 400px;
+    }
 
-        <section class="product">
-            <img src="./image/p3.jpg" alt="상품2">
-            <p>미니멀 반팔 오픈 카라 니트 (8Color)</p>
-            <p class="price">42000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
+    /* 아이콘과 텍스트의 간격 조정 및 아이콘 색상 변경 */
+    .nav-link {
+        color: black;
+        position: relative;
+        left: 80%;
+        bottom: 0%;
+    }
 
-        <section class="product">
-            <img src="./image/p5.jpg" alt="상품2">
-            <p>트랜디 쿨 빅오버 반팔셔츠 (7Color)</p>
-            <p class="price">32200</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p6.jpg" alt="상품2">
-            <p>로스 쿨 오버 반팔 데님 셔츠 (3Color)</p>
-            <p class="price">$49800</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p7.jpg" alt="상품2">
-            <p>프리미엄 스탠다드 반팔 니트 (17Color)</p>
-            <p class="price">27000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p8.jpg" alt="상품2">
-            <p>바캉스 오버 실크 셔츠 (5Color)</p>
-            <p class="price">36000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p9.jpg" alt="상품2">
-            <p>프리미엄 스탠다드 반팔 니트 (17Color)</p>
-            <p class="price">28900</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p10.jpg" alt="상품2">
-            <p>프리미엄 스탠다드 반팔 니트 (17Color)</p>
-            <p class="price">$52000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p11.jpg" alt="상품2">
-            <p>프리미엄 쿨 린넨 셔츠 (8Color)</p>
-            <p class="price">38000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p12.jpg" alt="상품2">
-            <p>로스 오버핏 맨투맨 (4Color)</p>
-            <p class="price">$33000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./image/p13.jpg" alt="상품2">
-            <p>오프 트레이닝 오버 맨투맨 (4Color)</p>
-            <p class="price">59000</p>
-            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
-        </section>
-
-    </main>
+    /* 추가 스타일링이 필요한 경우 styles.css에 추가 */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4개의 열을 생성 */
+        gap: 20px; /* 열과 행 사이의 간격 설정 (선택적) */
+    }
 
 
-    <footer>
-        <p>&copy; Leo</p>
-    </footer>
-</div>
+    /* 다른 스타일링을 원하는 경우 필요한 스타일 추가 */
+    .price {
+        font-weight: bold;
+    }
+
+    .add-to-cart {
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .fa-cart-plus {
+        margin-right: 5px; /* 아이콘과 텍스트 사이의 간격 조정 (선택적) */
+    }
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const products = [
+            {
+                name: '프리미엄 스탠다드 반팔 니트 (17Color)',
+                price: 29000,
+                image: 'p1.jpg' // 이미지 파일 경로
+            },
+            {
+                name: '루즈핏 라운드 니트 조끼 (5Color)',
+                price: 52000,
+                image: 'p2.jpg'
+            },
+            {
+                name: '미니멀 반팔 오픈 카라 니트 (8Color)',
+                price: 42000,
+                image: 'p3.jpg'
+            },
+            {
+                name: '트랜디 쿨 빅오버 반팔셔츠 (7Color)',
+                price: 32200,
+                image: 'p4.jpg'
+            },
+            {
+                name: '로스 쿨 오버 반팔 데님 셔츠 (3Color)',
+                price: 49800,
+                image: 'p5.jpg'
+            },
+            {
+                name: '프리미엄 스탠다드 반팔 니트 (17Color)',
+                price: 27000,
+                image: 'p6.jpg'
+            },
+            {
+                name: '바캉스 오버 실크 셔츠 (5Color)',
+                price: 36000,
+                image: 'p7.jpg'
+            },
+            {
+                name: '프리미엄 스탠다드 반팔 니트 (17Color)',
+                price: 28900,
+                image: 'p8.jpg'
+            },
+            {
+                name: '프리미엄 스탠다드 반팔 니트 (17Color)',
+                price: 52000,
+                image: 'p9.jpg'
+            },
+            {
+                name: '프리미엄 쿨 린넨 셔츠 (8Color)',
+                price: 38000,
+                image: 'p10.jpg'
+            },
+            {
+                name: '로스 오버핏 맨투맨 (4Color)',
+                price: 33000,
+                image: 'p11.jpg'
+            },
+            {
+                name: '오프 트레이닝 오버 맨투맨 (4Color)',
+                price: 59000,
+                image: 'p12.jpg'
+            }
+    ];
+
+        const productList = document.getElementById('productList');
+        let cartItems = []; // 장바구니에 추가한 상품 목록 배열
+
+        function addToCartHandler(productName, productPrice, productImage) {
+            // 장바구니에 상품 추가
+            cartItems.push({
+                name: productName,
+                price: productPrice,
+                image: productImage
+            });
+
+            // 팝업 메시지 띄우기
+            const message = `${productName}이(가) 장바구니에 추가되었습니다.`;
+            alert(message);
+
+            // 장바구니 정보를 로컬 스토리지에 저장
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        }
+
+        function renderProductList() {
+            products.forEach(product => {
+                const section = document.createElement('section');
+                section.classList.add('product');
+                section.innerHTML = `
+                <img src="./image/${product.image}" alt="${product.name}">
+                <p>${product.name}</p>
+                <p class="price">${product.price}원</p>
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+            `;
+                productList.appendChild(section);
+
+                // 상품 추가 버튼 클릭 시
+                const addToCart = section.querySelector('.add-to-cart');
+                addToCart.addEventListener('click', function () {
+                    addToCartHandler(product.name, product.price, product.image);
+
+                });
+            });
+        }
+
+        // 저장된 장바구니 정보를 가져옴
+        const storedCartItems = localStorage.getItem('cartItems');
+        if (storedCartItems) {
+            cartItems = JSON.parse(storedCartItems);
+        }
+
+        // 상품 목록 초기화
+        renderProductList();
+    });
+
+
+</script>
+<h1>Leo</h1><br>
+<!-- 홈 아이콘 버튼 추가 -->
+<a class="nav-link" href="frame.html"><i class="fas fa-home"></i>Home</a>
+<!-- 장바구니 아이콘 버튼 추가 -->
+<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i>Cart </a>
+<!-- 로그인 아이콘 버튼 추가 -->
+<a class="nav-link" href="LogIn.html"><i class="fas fa-sign-in-alt"></i>Log In</a>
+<h2> Men's clothes</h2><br><br>
+
+
+<main class="product-grid"  id="productList"></main>
+
+
+<footer>
+    <p>&copy; Leo</p>
+</footer>
 </body>
 
 </html>
